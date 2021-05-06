@@ -28,8 +28,8 @@ public class TUaApplicationController  {
     @Autowired
     ITUaApplicationService itUaApplicationService;
 
-    @GetMapping("/appList1")
-    @ApiOperation(value = "获取应用信息列表5", notes = "分页获取应用信息")
+    @GetMapping("/appList2")
+    @ApiOperation(value = "获取应用信息列表6", notes = "分页获取应用信息")
     public ResponseData getEmployLists(@RequestParam(value = "pageNo",defaultValue = "1")
                                            @ApiParam(value = "当前页码",required = true) Integer pageNo,
                                        @RequestParam(value = "size",defaultValue = "5")
@@ -39,7 +39,7 @@ public class TUaApplicationController  {
     }
 
     @GetMapping("/appDatailById/{id}")
-    @ApiOperation(value = "根据id获取应用信息", notes = "根据id获取应用信息")
+    @ApiOperation(value = "根据id获取应用信息2", notes = "根据id获取应用信息")
     public ResponseData getAppliDetailById(@PathVariable("id") Integer id){
         TUaApplication tUaApplication=itUaApplicationService.getAppliDetailById(id);
         return ResponseData.success(tUaApplication);
