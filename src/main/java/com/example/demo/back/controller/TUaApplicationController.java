@@ -29,7 +29,7 @@ public class TUaApplicationController  {
     ITUaApplicationService itUaApplicationService;
 
     @GetMapping("/appList2")
-    @ApiOperation(value = "获取应用信息列表6", notes = "分页获取应用信息")
+    @ApiOperation(value = "获取应用信息列表7", notes = "分页获取应用信息")
     public ResponseData getEmployLists(@RequestParam(value = "pageNo",defaultValue = "1")
                                            @ApiParam(value = "当前页码",required = true) Integer pageNo,
                                        @RequestParam(value = "size",defaultValue = "5")
