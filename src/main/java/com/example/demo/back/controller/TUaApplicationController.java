@@ -39,7 +39,7 @@ public class TUaApplicationController  {
     }
 
     @GetMapping("/appDatailById/{id}")
-    @ApiOperation(value = "根据id获取应用信息", notes = "根据id获取应用信息")
+    @ApiOperation(value = "根据id获取应用信息1", notes = "根据id获取应用信息")
     public ResponseData getAppliDetailById(@PathVariable("id") Integer id){
         TUaApplication tUaApplication=itUaApplicationService.getAppliDetailById(id);
         return ResponseData.success(tUaApplication);
