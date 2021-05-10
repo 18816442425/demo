@@ -28,7 +28,7 @@ public class TUaApplicationController  {
     @Autowired
     ITUaApplicationService itUaApplicationService;
 
-    //我是文明户
+    //我是文明户点点滴滴
     @GetMapping("/appList2")
     @ApiOperation(value = "获取应用信息列表7", notes = "分页获取应用信息")
     public ResponseData getEmployLists(@RequestParam(value = "pageNo",defaultValue = "1")
